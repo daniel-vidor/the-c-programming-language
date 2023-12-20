@@ -7,27 +7,30 @@
  * backspaces visible in an unambiguous way.
  */
 
-main() {
+main()
+{
 	int c;
-	
+
 	printf("Please enter any characters...\n");
-	
-	while ((c = getchar()) != '\n') {
-		switch(c) {
-			case '\t':
-				printf("\\t");
-				break;
-				
-			case '\b':
-				printf("\\b");
-				break;
-				
-			case '\\':
-				printf("\\\\");
-				break;
-				
-			default:
-				printf("%c", c);
+
+	while ((c = getchar()) != '\n')
+	{
+		switch (c)
+		{
+		case '\t':
+			printf("\\t");
+			break;
+
+		case '\b':
+			printf("\\b");
+			break;
+
+		case '\\':
+			printf("\\\\");
+			break;
+
+		default:
+			printf("%c", c);
 		}
 	}
 }

@@ -6,13 +6,16 @@
  * one or more blanks by a single blank.
  */
 
-main() {
+main()
+{
 	int c, prevC;
-	
+
 	printf("Please enter any characters...\n");
-	
-	while ((c = getchar()) != '\n') {
-		if (!(c == ' ' && prevC == ' ')) {
+
+	while ((c = getchar()) != '\n')
+	{
+		if (!(c == ' ' && prevC == ' '))
+		{
 			printf("%c", c);
 		}
 		prevC = c;

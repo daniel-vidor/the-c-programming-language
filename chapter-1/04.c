@@ -5,7 +5,8 @@
  * Write a program to print the corresponding Celsius to Fahrenheit table.
  */
 
-main() {
+main()
+{
     float fahr, celsius;
     int lower, upper, step;
 
@@ -17,10 +18,10 @@ main() {
     printf("--- ------\n");
 
     celsius = lower;
-    while (celsius <= upper) {
+    while (celsius <= upper)
+    {
         fahr = celsius * (9.0 / 5.0) + 32;
-	printf("%3.0f %6.1f\n", celsius, fahr);
-	celsius = celsius + step;
+        printf("%3.0f %6.1f\n", celsius, fahr);
+        celsius = celsius + step;
     }
 }
-

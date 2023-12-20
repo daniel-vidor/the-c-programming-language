@@ -5,6 +5,7 @@
  * Write a program to print the value of EOF.
  */
 
-main() {
+main()
+{
 	printf("%d", EOF);
 }
